@@ -167,12 +167,12 @@
 
   <!-- HERO WAITLIST FORM -->
   <div class="cta-wrap" id="waitlist">
-    <div class="email-row" id="heroFormRow">
-      <input type="email" id="heroEmail" placeholder="Enter your email — join the waitlist" />
-      <button onclick="submitHero()">Join Now</button>
-    </div>
-    <div class="form-success" id="heroSuccess">You're in. Season 1 — Mid 2027. 🏆</div>
-    <div class="form-error" id="heroError">Something went wrong. Please try again.</div>
+    <form action="https://formspree.io/f/xqednegg" method="POST">
+      <div class="email-row">
+        <input type="email" name="email" id="heroEmail" placeholder="Enter your email — join the waitlist" required />
+        <button type="submit">Join Now</button>
+      </div>
+    </form>
     <p class="cta-note">No spam. Just your place in history.</p>
   </div>
 
@@ -285,12 +285,12 @@
   <h2>Be there <span>first.</span></h2>
   <p>The founding community gets early access, Kickstarter early bird pricing, and a permanent place in SCL history.</p>
     <div style="max-width:440px;margin:0 auto 14px;">
-      <div class="email-row" id="footerFormRow">
-        <input type="email" id="footerEmail" placeholder="Your email address" />
-        <button onclick="submitFooter()">Join Waitlist</button>
-      </div>
-      <div class="form-success" id="footerSuccess">You're in. See you at the World Cup. 🏆</div>
-      <div class="form-error" id="footerError">Something went wrong. Please try again.</div>
+      <form action="https://formspree.io/f/xqednegg" method="POST">
+        <div class="email-row">
+          <input type="email" name="email" id="footerEmail" placeholder="Your email address" required />
+          <button type="submit">Join Waitlist</button>
+        </div>
+      </form>
     </div>
   <p style="font-size:11px;color:rgba(245,240,232,.15);letter-spacing:.1em;text-transform:uppercase;margin-top:12px;">No spam. Season 1 — Mid 2027. Worldwide.</p>
 </div>
